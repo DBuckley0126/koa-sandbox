@@ -2,9 +2,10 @@
   "name": "koa-sandbox",
   "version": "1.0.0",
   "description": "Learning Node.js and the Koa.js framework",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/DBuckley0126/koa-sandbox/issues"
   },
-  "homepage": "https://github.com/DBuckley0126/koa-sandbox#readme"
+  "homepage": "https://github.com/DBuckley0126/koa-sandbox#readme",
+  "dependencies": {
+    "koa": "2.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.3"
+  }
 }
