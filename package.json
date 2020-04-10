@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/DBuckley0126/koa-sandbox#readme",
   "dependencies": {
-    "koa": "2.11.0"
+    "koa": "2.11.0",
+    "koa-json": "2.0.2"
   },
   "devDependencies": {
     "nodemon": "2.0.3"
