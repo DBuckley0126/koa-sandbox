@@ -12,7 +12,9 @@ app.use(json())
 
 
 // app.use(async ctx => (ctx.body = {msg: 'Hello world'}));
-router.get('/test', ctx => (ctx.body = {msg: 'Hello world'}))
+router.post('/test', ctx => {
+  ctx.body = {msg: 'Hello world'}
+})
 
 render(app, {
   root:path.join(__dirname, 'views'),
@@ -32,4 +34,4 @@ router.get('/', async ctx => {
 app.use(router.routes()).use(router.allowedMethods());
 
 
-app.listen(3000, () => console.log('Server Starting...'))
+app.listen(5000, () => console.log('Server Starting...'))
