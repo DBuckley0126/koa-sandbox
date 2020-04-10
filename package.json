@@ -19,7 +19,8 @@
   "homepage": "https://github.com/DBuckley0126/koa-sandbox#readme",
   "dependencies": {
     "koa": "2.11.0",
-    "koa-json": "2.0.2"
+    "koa-json": "2.0.2",
+    "koa-router": "8.0.8"
   },
   "devDependencies": {
     "nodemon": "2.0.3"
