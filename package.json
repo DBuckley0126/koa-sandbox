@@ -1,0 +1,19 @@
+{
+  "name": "koa-sandbox",
+  "version": "1.0.0",
+  "description": "Learning Node.js and the Koa.js framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DBuckley0126/koa-sandbox.git"
+  },
+  "author": "Danny Buckley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DBuckley0126/koa-sandbox/issues"
+  },
+  "homepage": "https://github.com/DBuckley0126/koa-sandbox#readme"
+}
