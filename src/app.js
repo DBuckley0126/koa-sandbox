@@ -8,6 +8,8 @@ const koaBody = require('koa-body');
 const app = new Koa();
 const router = new KoaRouter();
 
+const PORT = 5000;
+
 // Json Prettier Middleware
 app.use(json())
 
@@ -40,4 +42,6 @@ router.get('/', async ctx => {
 app.use(router.routes()).use(router.allowedMethods());
 
 
-app.listen(5000, () => console.log('Server Starting...'))
+const server = app.listen(PORT, () => {
+  console.log(`Server listening on port: ${PORT}`);
+});

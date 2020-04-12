@@ -6,4 +6,5 @@
   },
   "ext": "js,html,json",
   "signal": "SIGTERM"
+
 }
