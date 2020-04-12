@@ -1,4 +1,6 @@
 const Koa = require('koa');
+const bodyParser = require('koa-bodyparser');
+
 const indexRoutes = require('./routes/index');
 const movieRoutes = require('./routes/movies');
 
