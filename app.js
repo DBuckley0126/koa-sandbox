@@ -2,7 +2,8 @@ const Koa = require('koa');
 const KoaRouter = require('koa-router')
 const json = require('koa-json')
 const path = require('path')
-const render = require('koa-ejs') 
+const render = require('koa-ejs')
+const koaBody = require('koa-body');
 
 const app = new Koa();
 const router = new KoaRouter();
@@ -10,10 +11,15 @@ const router = new KoaRouter();
 // Json Prettier Middleware
 app.use(json())
 
+app.use(koaBody());
+
 
 // app.use(async ctx => (ctx.body = {msg: 'Hello world'}));
 router.post('/test', ctx => {
-  ctx.body = {msg: 'Hello world'}
+  console.log("hit test route")
+  let blah = JSON.parse(ctx.request.body)
+  ctx.response.status = 200
+  ctx.response.body = {msg: 'Hello world'}
 })
 
 render(app, {

@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon",
-    "debug": "nodemon --inspect app.js"
+    "start": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -20,11 +19,13 @@
   "homepage": "https://github.com/DBuckley0126/koa-sandbox#readme",
   "dependencies": {
     "koa": "2.11.0",
+    "koa-body": "4.1.1",
     "koa-ejs": "4.3.0",
     "koa-json": "2.0.2",
     "koa-router": "8.0.8"
   },
   "devDependencies": {
+    "chai-http": "3.0.0",
     "nodemon": "2.0.3"
   }
 }
