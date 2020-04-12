@@ -1,20 +1,19 @@
-const knex = require('../connection');
+const knex = require("../connection");
 
 function getAllMovies() {
-  return knex('movies')
-  .select('*');
+  return knex("movies").select("*");
 }
 
 function getSingleMovie(id) {
-  return knex('movies')
-  .select('*')
-  .where({ id: parseInt(id) });
+  return knex("movies")
+    .select("*")
+    .where({ id: parseInt(id) });
 }
 
 function addMovie(movie) {
-  return knex('movies')
-  .insert(movie)
-  .returning('*');
+  return knex("movies")
+    .insert(movie)
+    .returning("*");
 }
 
 module.exports = {
