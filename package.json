@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/DBuckley0126/koa-sandbox#readme",
   "dependencies": {
+    "@koa/cors": "2.2.3",
     "bcryptjs": "^2.4.3",
     "husky": "4.2.1",
     "knex": "^0.13.0",

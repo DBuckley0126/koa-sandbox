@@ -2,6 +2,7 @@ const Koa = require("koa");
 const logger = require('koa-logger')
 const KoaBody = require("koa-body");
 const Json = require("koa-json");
+const cors = require('@koa/cors');
 
 const indexRoutes = require("./routes/index");
 const movieRoutes = require("./routes/movies");
@@ -15,6 +16,8 @@ app.use(Json());
 app.use(KoaBody());
 // Add koa-logger middleware
 app.use(logger())
+// Add koa-cors middleware
+app.use(cors());
 
 app.use(indexRoutes.routes());
 app.use(movieRoutes.routes());
