@@ -16,6 +16,13 @@ function addMovie(movie) {
     .returning("*");
 }
 
+function updateMovie(id, movie) {
+  return knex('movies')
+  .update(movie)
+  .where({ id: parseInt(id) })
+  .returning('*');
+}
+
 module.exports = {
   getAllMovies,
   getSingleMovie,
